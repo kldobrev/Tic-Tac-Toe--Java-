@@ -5,13 +5,15 @@ public class Player {
 	private char sign;
 	private int score;
 	
-	public Player() {			//For the CPU
+	//For the CPU
+	public Player() {
 		name="CPU";
 		sign='O';
 		score=0;
 	}
 	
-	public Player(char sgn) {			//For the first and second player
+	//For the first and second player
+	public Player(char sgn) {
 		sign=(sgn=='X' || sgn=='O') ? sgn : '?';
 		score=0;
 	}

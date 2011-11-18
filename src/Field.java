@@ -4,8 +4,8 @@ import javax.swing.JOptionPane;
 public class Field {
 	
 	private char [][] data;			//data container : X, O or ?
-	Player fst;
-	Player snd;
+	private Player fst;
+	private Player snd;
 	private byte turn;
 	private int gameType;
 	
@@ -37,7 +37,8 @@ public class Field {
 			snd=new Player();
 	}
 	
-	public void addSndPlayer() {			//Sets the settings for the second player
+	//Sets the settings for the second player
+	public void addSndPlayer() {
 		snd=new Player('O');
 		String str;
 		do {
